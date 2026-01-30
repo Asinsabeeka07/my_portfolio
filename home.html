@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Asin Sabeeka | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { display: flex; background-color: #fff; color: #333; }
+
+        /* Left Sidebar - Jackson Ford Style */
+        .sidebar {
+            width: 300px;
+            height: 100vh;
+            background: #fff;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            border-right: 1px solid #eee;
+            justify-content: space-between;
+            z-index: 100;
+        }
+
+        .profile-section { text-align: center; width: 100%; }
+        .profile-small {
+            width: 140px; height: 140px;
+            border-radius: 50%; object-fit: cover;
+            margin-bottom: 20px; border: 6px solid #f8f8f8;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .nav-links { list-style: none; text-align: center; width: 100%; margin-top: 30px; }
+        .nav-links li { margin: 18px 0; }
+        .nav-links a {
+            text-decoration: none; color: #555;
+            font-size: 0.85rem; font-weight: 500;
+            text-transform: uppercase; letter-spacing: 2px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover { color: #a855f7; }
+
+        /* Social Links at Sidebar Bottom */
+        .social-links { padding-bottom: 30px; display: flex; gap: 20px; }
+        .social-links a { color: #999; font-size: 1.4rem; transition: 0.3s; }
+        .social-links a:hover { color: #a855f7; transform: translateY(-3px); }
+
+        /* Right Side Content */
+        .main-content { margin-left: 300px; width: calc(100% - 300px); }
+        section { min-height: 100vh; padding: 100px 10%; display: flex; flex-direction: column; justify-content: center; }
+
+        /* Home Hero Section */
+        #home {
+            background: linear-gradient(to right, rgba(255,255,255,0.97) 40%, transparent 100%), 
+                        url('asss.jpg') no-repeat center right/cover;
+        }
+
+        .hero-text h1 { font-family: 'Playfair Display', serif; font-size: 3.8rem; line-height: 1.1; margin-bottom: 10px; }
+        .hero-text span { display: block; font-weight: 300; color: #a855f7; }
+        .hero-text p { font-size: 1.1rem; color: #777; letter-spacing: 1px; }
+
+        /* Headings */
+        h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 30px; position: relative; }
+        h2::after { content: ''; display: block; width: 50px; height: 3px; background: #a855f7; margin-top: 10px; }
+
+        /* About & Resume Button */
+        .about-text { max-width: 800px; line-height: 1.8; color: #555; margin-bottom: 30px; }
+        .download-btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background-color: #a855f7;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: 0.4s;
+            border: 2px solid #a855f7;
+        }
+        .download-btn:hover { background-color: transparent; color: #a855f7; }
+
+        /* Skills Tags */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 12px; }
+        .skill-tag { background: #f9f9f9; padding: 10px 25px; border-radius: 5px; font-size: 0.9rem; border: 1px solid #eee; transition: 0.3s; }
+        .skill-tag:hover { border-color: #a855f7; color: #a855f7; }
+
+        /* Project Cards */
+        .project-card { 
+            background: #fff; border: 1px solid #eee; padding: 35px; 
+            margin-bottom: 25px; border-radius: 15px; transition: 0.4s; 
+        }
+        .project-card:hover { border-color: #a855f7; box-shadow: 0 15px 30px rgba(0,0,0,0.05); transform: translateY(-5px); }
+        .project-card h3 { color: #a855f7; margin-bottom: 15px; font-family: 'Playfair Display', serif; font-size: 1.8rem; }
+        .project-card p { color: #666; line-height: 1.7; margin-bottom: 15px; }
+        .project-meta span { background: #f0e6ff; color: #a855f7; padding: 5px 12px; font-size: 0.75rem; border-radius: 4px; margin-right: 8px; font-weight: 600; }
+
+        /* Responsive Mobile View */
+        @media (max-width: 992px) {
+            .sidebar { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid #eee; }
+            .main-content { margin-left: 0; width: 100%; }
+            .hero-text h1 { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="profile-section">
+            <img src="asss.jpg" alt="A. Asin Sabeeka" class="profile-small">
+            <h2 style="font-size: 1.2rem; margin-bottom: 5px; font-family: 'Poppins';">A. Asin Sabeeka</h2>
+            <p style="font-size: 0.7rem; color: #aaa; letter-spacing: 1px; text-transform: uppercase;">B.Tech IT Student</p>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Projects</a></li>
+            </ul>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/asinsabeeka" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Asinsabeeka07" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:asinsabeeka07@gmail.com" title="Email"><i class="far fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        
+        <section id="home">
+            <div class="hero-text">
+                <h1>Hi! <span>I'm Asin Sabeeka</span></h1>
+                <p>Third-year IT Student | Aspiring Software Developer</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-text">
+                <p>
+                    I am A. Asin Sabeeka, currently pursuing my B.Tech in Information Technology at E.G.S Pillay Engineering College (2023-2027). 
+                    I am deeply passionate about software development and have a strong interest in building secure, efficient systems.
+                </p>
+            </div>
+            <a href="asinsabeeka_resume.pdf" class="download-btn" download>
+                <i class="fas fa-file-download" style="margin-right: 10px;"></i> Download Resume
+            </a>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-tag">Java (Intermediate)</div>
+                <div class="skill-tag">Python (Intermediate)</div>
+                <div class="skill-tag">HTML5 / CSS3</div>
+                <div class="skill-tag">JavaScript (Intermediate)</div>
+                <div class="skill-tag">SQL Database</div>
+                <div class="skill-tag">Cyber Security Basics</div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>Projects</h2>
+            
+            <div class="project-card">
+                <h3>Online E-commerce with Escrow System</h3>
+                <p>
+                    Developing a secure e-commerce shopping platform integrated with an Escrow payment system. 
+                    This project focuses on enhancing trust between buyers and sellers by holding funds in a secure account until the transaction is successfully completed.
+                </p>
+                <div class="project-meta">
+                    <span>Web Security</span>
+                    <span>Payment Gateway</span>
+                    <span>Full Stack</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Professional Portfolio</h3>
+                <p>
+                    A clean and responsive personal portfolio built with modern CSS and typography to showcase academic progress and technical projects.
+                </p>
+                <div class="project-meta">
+                    <span>UI/UX</span>
+                    <span>Frontend</span>
+                    <span>Responsive</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
